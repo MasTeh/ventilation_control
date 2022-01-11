@@ -1,0 +1,21 @@
+<div class="row" style="padding-top: 10px;  border-top: solid gray 1px; width: 330px">
+    <div class="col-40" style="padding: 4px">
+        <div style="font-size: 14px">{{name}}</div>
+    </div>
+    <div class="col-40">
+        <select class="button setter-switcher-{{number}} setter-switcher-change" setter-index="{{setternum}}" style="width: 100%">
+            <option value="---">---</option>
+            {{#each switcherJSON}}
+            <option value="{{@key}}">{{this}}</option>
+            {{/each}}
+        </select>
+
+        <div class="error-msg" style="font-size: 10px; color: red"></div>
+    </div>
+    <div class="col-20">
+        <div class="row">
+            <div class="col-50"><a href="#" class="setter-edit-elem setter-edit" setter-num="{{setternum}}"><i class="f7-icons" style="font-size: 20px; color: black">pencil_ellipsis_rectangle</i> </a></div>
+            <div class="col-50"><a href="#" class="setter-edit-elem setter-remove" setter-num="{{setternum}}"><i class="f7-icons" style="font-size: 20px; color: red">minus_circle</i> </a></div>
+        </div>
+    </div>
+</div>

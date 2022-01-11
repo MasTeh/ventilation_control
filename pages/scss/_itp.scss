@@ -1,0 +1,499 @@
+.itp {
+    &_schema {
+        display: flex;
+        flex-direction: column;
+        &_title {
+            max-width: 470px;
+            margin: 10px auto;
+        }
+        &_main-pic {
+            position: relative; 
+            width: 775px;
+            height: 600px; 
+            z-index:0;
+            zoom: 72%;
+            background: url('../img/itp_schema/itp-main-pic.png');
+            &_wall {
+                background: url('../img/itp_schema/wall.png');
+                left: 192px; 
+                top: 30px; 
+                position: absolute; 
+                width: 66px;
+                height: 105px;
+                z-index:1;
+            }
+            &_valve1 {
+                background: url('../img/itp_schema/valve.png');
+                left: 263px;  
+                top: 200px;
+                position: absolute; 
+                width: 57px;
+                height: 38px;
+                z-index:1;  
+            }
+            &_valve2 {
+                background: url('../img/itp_schema/valve.png');
+                left: 263px;  
+                top: 285px;
+                position: absolute; 
+                width: 57px;
+                height: 38px;
+                z-index:1;  
+            }
+            &_valve3 {
+                background: url('../img/itp_schema/valve.png');
+                left: 267px;  
+                top: 359px; 
+                position: absolute; 
+                width: 57px;
+                height: 38px;
+                z-index:1;  
+            }
+            &_valve4 {
+                background: url('../img/itp_schema/valve.png');
+                left: 440px;  
+                top: 282px;
+                position: absolute; 
+                width: 57px;
+                height: 38px;
+                z-index:1;  
+            }
+            &_valve5 {
+                background: url('../img/itp_schema/valve.png');
+                left: 440px;  
+                top: 360px; 
+                position: absolute; 
+                width: 57px;
+                height: 38px;
+                z-index:1;  
+            }
+            &_boiler1 {
+                background: url('../img/itp_schema/element3/boiler_off.png');
+                left: 695px;  
+                top: 19px; 
+                position: absolute; 
+                width: 79px;
+                height: 190px;
+                z-index:1;
+                display: none; 
+            }
+            &_boiler2 {
+                background: url('../img/itp_schema/element3/boiler_on.gif');
+                left: 695px;  
+                top: 19px; 
+                position: absolute; 
+                width: 79px;
+                height: 190px;
+                z-index:1; 
+            }
+            &_boiler3 {
+                background: url('../img/itp_schema/element6/boiler_off.png');
+                left: 695px;  
+                top: 220px; 
+                position: absolute; 
+                width: 79px;
+                height: 190px;
+                z-index:1;
+            }
+            &_boiler4 {
+                background: url('../img/itp_schema/element6/boiler_on.gif');
+                left: 695px;  
+                top: 220px; 
+                position: absolute; 
+                width: 79px;
+                height: 190px;
+                z-index:1;
+                display: none;  
+            }
+            &_recharge-main {
+                background: url('../img/itp_schema/element4/element4.png');
+                left: 70px;  
+                top: 262px; 
+                position: absolute; 
+                width: 71px;
+                height: 53px;
+                z-index:1;
+            }
+            &_recharge1 {
+                background: url('../img/itp_schema/element4/recharge-run.gif');
+                left: 82px;  
+                top: 262px; 
+                position: absolute; 
+                width: 50px;
+                height: 30px;
+                z-index: 2;
+                display: none;
+            }
+            &_recharge2 {
+                background: url('../img/itp_schema/element4/recharge-error.gif');
+                left: 82px;  
+                top: 262px; 
+                position: absolute; 
+                width: 50px;
+                height: 30px;
+                z-index: 2;
+            }
+            &_recharge3 {
+                background: url('../img/itp_schema/element4/recharge-error1.gif');
+                left: 82px;  
+                top: 262px; 
+                position: absolute; 
+                width: 50px;
+                height: 30px;
+                z-index: 2;
+                display: none;
+            }
+            &_pump1 {
+                background: url('../img/itp_schema/element5/pump1.gif');
+                left: 331px;
+                top: 279px;
+                position: absolute;
+                width: 106px;
+                height: 58px;
+                z-index: 1;
+            }
+            &_pump2 {
+                background: url('../img/itp_schema/element7/pump2.gif');
+                left: 331px;
+                top: 355px;
+                position: absolute;
+                width: 104px;
+                height: 58px;
+                z-index: 1;
+            }
+            &_element8 {
+                background: url('../img/itp_schema/element8/dps.png');
+                left: 196px;
+                top: 388px;
+                position: absolute;
+                width: 378px;
+                height: 102px;
+                z-index: 1;
+            }
+            &_element8-1 {
+                background: url('../img/itp_schema/element8/dps1.gif');
+                left: 355px;
+                top: 463px;
+                position: absolute;
+                width: 42px;
+                height: 27px;
+                z-index: 2;
+            }
+            &_winter {
+                background: url('../img/itp_schema/element1/winter.gif');
+                left: 20px;
+                top: 30px;
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                z-index: 2;
+            }
+            &_day {
+                background: url('../img/itp_schema/element2/day.png');
+                left: 18px;
+                top: 110px;
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                z-index: 2;
+                display: none;
+            }
+            &_night {
+                background: url('../img/itp_schema/element2/night.png');
+                left: 18px;
+                top: 110px;
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                z-index: 2;
+            }
+            &_warning {
+                position: absolute;
+                color: red;
+                top: 120px;
+                left: 290px;
+                font-size: 26px;
+                max-width: 260px;
+                text-align: center;
+                z-index: 1;  
+            }
+            &_time {
+                position: absolute;
+                top: 60px;
+                left: 290px;
+                font-size: 26px;
+                max-width: 260px;
+                text-align: center;
+                z-index: 1; 
+            }
+            &_txt {
+                text-align: center;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 103.19%;
+            }
+            &_txt1 {
+                position: absolute;
+                left: 659px;
+                top: 16px;
+            }
+            &_txt2 {
+                position: absolute;
+                left: 23px;
+                top: 196px;
+            }
+            &_txt3 {
+                position: absolute;
+                left: 659px;
+                top: 220px;
+            }
+            &_txt4 {
+                position: absolute;
+                left: 82px;
+                top: 245px;
+            }
+            &_txt5 {
+                position: absolute;
+                left: 22px;
+                top: 274px;
+            }
+            &_txt6 {
+                position: absolute;
+                left: 360px;
+                top: 260px;
+            }
+            &_txt7 {
+                position: absolute;
+                left: 23px;
+                top: 358px;
+            }
+            &_txt8 {
+                position: absolute;
+                left: 360px;
+                top: 337px;
+            }
+            &_info {
+                display: flex;
+                position: absolute;
+                justify-content: space-around;
+                min-width: 125px;
+                top: 525px;
+                left: 230px;
+                padding: 10px;
+                z-index: 1;
+                @include gradient-shadow;
+                &_column {
+                    &:nth-child(even) {
+                        margin: 0 20px 0 10px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &_txt {
+                        min-height: 10px;
+                        display: block;
+                        text-align: right;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 11px;
+                        line-height: 103.19%;
+                        margin: 0 0 3px;
+                    }
+                }
+            }
+            &_ust {
+                @include gradient-shadow;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 10px 0 0;
+                width: 140px;
+                position: absolute;
+                z-index: 2;
+                top: 480px;
+                left: 630px;
+                &_form {
+                    align-items: center;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 103.19%;
+                    max-width: 190px;
+                    &_wrap {
+                        &_output {
+                            &_dynamic-txt {
+                                font-family: 'roboto', Arial, sans-serif;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 11px;
+                                outline: none;
+                            }
+                            &_sub-txt {
+                                font-size: 9px;
+                            } 
+                        }
+                    }
+                }
+            }
+            &_output1 {
+                background: url('../img/itp_schema/c0.gif');
+                left: 175px;
+                top: 40px;            
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3; 
+            }
+            &_output2 {
+                background: url('../img/itp_schema/c0.gif');
+                left: 175px;
+                top: 140px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3; 
+            }
+            &_output3 {
+                background: url('../img/itp_schema/c0.gif');
+                left: 180px;
+                top: 300px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3; 
+            }
+            &_output4 {
+                background: url('../img/itp_schema/pa.gif');
+                left: 575px;
+                top: 445px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3; 
+            }
+            &_output-txt {
+                text-align: center;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 103.19%;
+                display: block;
+                margin: 5px 10px 0 0;
+            }
+            &_back-btn {
+                @include btn;
+                @include gradient-anim;
+                position: absolute;
+                width: 120px;
+                height: 40px;
+                font-weight: normal;
+                font-size: 15px;
+                top: 545px;
+                left: 10px;
+            }
+        }
+    }
+    &_ustavki {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 650px;
+        padding: 0 10px 0 0;
+        &_title {
+            text-align: center;
+            padding: 0 82px;
+        }
+        &_icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &_panel {
+            display: flex;
+            justify-content: center;
+            width: 650px;
+            margin: 0 5px 0 10px;
+            flex-wrap: nowrap;
+            &_title {
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 103.19%;
+                text-align: center; 
+                max-width: 150px;
+                margin: 0 0 10px;
+            }
+            &_ust-with-timer {
+                @include gradient-shadow;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 10px 0 20px;
+                width: 150px;
+                margin: 0 50px 0 0;
+                &_form {
+                    align-items: center;
+                    margin: 0;
+                    &_label {
+                        &_input {
+                            width: 30px; 
+                        }
+                    }
+                    &_wrap {
+                        justify-content: space-between;
+                        width: 130px;
+                        &_txt {
+                            min-width: 27px;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                        }
+                        &_output {
+                            width: 55px;
+                        }
+                    }
+                    &_timer {
+                        width: 100%;
+                        margin: 0 0 10px;
+                    }
+                    &_bottom-title {
+                        text-align: center;
+                    }
+                    &_btn {
+                        @include btn;
+                        @include gradient-anim;
+                        margin: 10px 0 0;
+                        width: 70px;
+                    }
+                }
+            }
+            &_graph {
+                @include gradient-shadow;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 320px;
+                padding: 10px 0 20px;
+            }
+        }
+    }
+}
+.ust-sub-txt {
+    font-size: 8px;
+    line-height: unset;
+}

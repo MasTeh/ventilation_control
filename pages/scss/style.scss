@@ -1,0 +1,96 @@
+@mixin top-txt {
+  position: absolute;
+  font-family: 'roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 103.19%;
+  letter-spacing: -0.02em;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+@mixin panel-style {
+  display: flex;
+  height: 58px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px 0 30px;
+  margin: 0 0 20px;
+  width: 100%;
+}
+@mixin btn {
+  font-family: 'roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 25px;
+}
+@mixin gradient-anim {
+  background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  &:hover {
+    background: linear-gradient(0deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+  }
+}
+@mixin gradient-shadow {
+  background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  &:hover {
+    background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+}
+
+@import "_header.scss";
+@import "_main-panel.scss";
+@import "_footer.scss";
+
+@import "_counters.scss";
+@import "_chart.scss";
+@import "_pvu.scss";
+@import "_itp.scss";
+@import "_debar.scss";
+@import "_vulkan.scss";
+@import "_conditioner.scss";
+@import "_log.scss";
+@import "_rangehood.scss";
+@import "_pvu3.scss";
+@import "_server-room.scss";
+
+
+
+@font-face {
+  font-family: 'roboto';
+  src:
+    url('../fonts/Robotomedium.woff2') format('woff2'),
+    url('../fonts/Robotomedium.woff') format('woff'),
+    url('../fonts/Robotomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src:
+    url('../fonts/Robotolight.woff2') format('woff2'),
+    url('../fonts/Robotolight.woff') format('woff'),
+    url('../fonts/Robotolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src:
+    url('../fonts/Roboto.woff2') format('woff2'),
+    url('../fonts/Roboto.woff') format('woff'),
+    url('../fonts/Roboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+

@@ -1,0 +1,18 @@
+<ul class="log_main_panel_list " id="accidentList">
+    <li class="log_main_panel_list_head log_main_panel_list_item">
+        <div class="log_main_panel_list_item_date">Дата</div>
+        <div class="log_main_panel_list_item_accident">Событие</div>
+    </li>
+    {{#each this}}
+    <li class="log_main_panel_list_item">
+        <div class="log_main_panel_list_item_date">{{date}}</div>
+        <div class="log_main_panel_list_item_accident">
+            {{#if is_red}}
+            <div style="color:red">{{message}}</div>
+            {{else}}
+            <div style="color:black">{{message}}</div>
+            {{/if}}
+        </div>
+    </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,23 @@
+<div class="row" style="padding-top: 10px; border-top: solid gray 1px; width: 330px">
+    <div class="col-40" style="padding: 4px">
+        <div style="font-size: 14px">{{name}}</div>
+    </div>
+    <div class="col-40">
+
+        <div class="stepper setter-{{number}} stepper-small stepper-init">
+            <div class="stepper-button-minus setter-button-minus" setter-index="{{setternum}}"></div>
+            <div class="stepper-input-wrap">
+                <input type="text" class="stepper-input-{{number}} setter-input-number"  setter-index="{{setternum}}" value="--" step="{{#if step}}{{step}}{{else}}1{{/if}}"  />
+            </div>
+            <div class="stepper-button-plus setter-button-plus" setter-index="{{setternum}}"></div>
+        </div>
+
+        <div class="error-msg" style="font-size: 10px; color: red"></div>
+    </div>
+    <div class="col-20">
+        <div class="row">
+            <div class="col-50"><a href="#" class="setter-edit-elem setter-edit" setter-num="{{setternum}}"><i class="f7-icons" style="font-size: 20px; color: black">pencil_ellipsis_rectangle</i> </a></div>
+            <div class="col-50"><a href="#" class="setter-edit-elem setter-remove" setter-num="{{setternum}}"><i class="f7-icons" style="font-size: 20px; color: red">minus_circle</i> </a></div>
+        </div>
+    </div>
+</div>

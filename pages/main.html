@@ -1,0 +1,819 @@
+<div class="t_header">
+    <div class="header_temperature">
+        <span class="header_temperature_label">T<sub>наруж.</sub></span>
+        <div class="header_temperature_output">
+            <span class="header_temperature_output_dynamic-txt"><div class="indicator" indicator-id="74">---</div></span>
+            <span class="header_temperature_output_static-txt">C&deg;</span>
+        </div>
+    </div>
+    <h1 class="header_title">Управление и контроль инженерных&nbsp;систем Железнодородный&nbsp;Привокзальная&nbsp;1</h1>
+    <img src="img/header_icon.png" class="header_icon" width="82" height="82">
+</div>
+<div class="main-panel">
+    <div link="sections/pvu" class="main-panel_wrap linked"  onclick="myapp.loadSectionIfNotEdit('pvu1')">
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan1"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">П1</span>
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan2"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">В1</span>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">Р<sub class="sub-txt">П1</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="1">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">Гц</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">Р<sub class="sub-txt">В1</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="2">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">Гц</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">приток</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="3">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">помещ.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="4">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">под. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="5">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">об. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="6">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">Выт</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="7">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">Наруж</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="8">---</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column timer1">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Вкл ПВУ 1</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="9">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="10">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Выкл ПВУ 1</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="11">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="12">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column timer2">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Вкл ПВУ 1</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="13">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="14">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Выкл ПВУ 1</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="15">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="16">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Сезон:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_option-txt">
+                        <div class="indicator" type="switcher" indicator-id="switcher5">---</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Режим:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_option-txt">
+                        <div class="indicator" type="switcher" indicator-id="switcher6">---</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap linked" onclick="myapp.loadSectionIfNotEdit('pvu2')">
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan3"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">П2</span>
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan4"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">В2</span>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">Р<sub class="sub-txt">П1</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="17">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">Гц</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">Р<sub class="sub-txt">В1</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="18">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">Гц</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">приток</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="19">--</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">помещ.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="20">--</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">под. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="21">--</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">об. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="22">--</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">Выт</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="23">--</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">Наруж</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="24">--</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column timer1">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Вкл ПВУ 2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="25">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="27">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Выкл ПВУ 2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="28">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="29">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column timer2">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Вкл ПВУ 2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="30">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="31">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Выкл ПВУ 2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="32">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="33">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Сезон:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_option-txt">
+                        <div class="indicator" type="switcher" indicator-id="switcher1">---</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Режим:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_option-txt">
+                        <div class="indicator" type="switcher" indicator-id="switcher2">---</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_pvu3 linked" onclick="myapp.loadSectionIfNotEdit('pvu3')">
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan5"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">П3</span>
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan6"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">В3</span>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">приток</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="36">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Режим:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">Работа</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_lavatory linked"  onclick="myapp.loadSectionIfNotEdit('rangehood')">
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan7"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">В2.2</span>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Вкл В2.2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="37">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="38">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Выкл В2.2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="39">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="40">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_bakery linked" onclick="myapp.loadSectionIfNotEdit('rangehood')">
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="fan9"></div>
+<!--            <img src="img/fan_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt">В4</span>
+        <div class="main-panel_wrap_column_wrap_output">
+            <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                <div class="indicator" indicator-id="73">-</div>
+            </span>
+            <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+        </div>
+        <div class="main-panel_wrap_column main-panel_bakery_timer">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Вкл В4</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="41">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="42">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Выкл В4</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="43">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">:</span>
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_timer">
+                        <div class="indicator" indicator-id="44">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_debarkader linked" onclick="myapp.loadSectionIfNotEdit('debar')">
+        <div class="main-panel_debarkader_animbox">
+            <div class="image-indicator" gid="debar1"></div>
+<!--            <img src="img/debarkader_anim.gif" class="main-panel_debarkader_anim-box_anim" width="92" height="55">-->
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">помещ.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="45">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">об. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="46">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Сезон:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_option-txt">
+                        <div class="indicator" type="switcher" indicator-id="switcher3">---</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Режим:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt main-panel_wrap_column_wrap_output_option-txt">
+                        <div class="indicator" type="switcher" indicator-id="switcher4">---</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_volcanoes linked" onclick="myapp.loadSectionIfNotEdit('vulkan')">
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="volcano1"></div>
+<!--            <img src="img/volcano_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Зона 1 кассы</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="48">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">&percnt;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">V1-V2</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="49">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="volcano2"></div>
+<!--            <img src="img/volcano_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Зона 2 овощи</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="50">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">&percnt;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">V3-V4</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="51">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_anim-box">
+            <div class="image-indicator" gid="volcano3"></div>
+<!--            <img src="img/volcano_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Зона 3 дебаркадер</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="52">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">&percnt;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">V5</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="53">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_server-room linked" onclick="myapp.loadSectionIfNotEdit('server-room')">
+        <div class="main-panel_wrap_column main-panel_server-room_column">
+            <div class="image-indicator" gid="server1"></div>
+<!--            <img src="img/server-room_anim.gif" width="75" height="35" class="main-panel_server-room_anim">-->
+            <span style="margin-top: -10px" class="main-panel_wrap_column_wrap_label main-panel_server-room_column_label">K4</span>
+        </div>
+        <div class="main-panel_wrap_column main-panel_server-room_column">
+            <div class="image-indicator" gid="server2"></div>
+<!--            <img src="img/server-room_anim.gif" width="75" height="35" class="main-panel_server-room_anim">-->
+            <span style="margin-top: -10px" class="main-panel_wrap_column_wrap_label main-panel_server-room_column_label">K5</span>
+        </div>
+        <div class="main-panel_wrap_column_wrap">
+            <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">сер.</sub></span>
+            <div class="main-panel_wrap_column_wrap_output">
+                <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                    <div class="indicator" indicator-id="54">-</div>
+                </span>
+                <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Канал К4</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="55">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Канал К5</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="56">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column_wrap">
+            <span class="main-panel_wrap_column_wrap_small-label">Ротация</span>
+            <div class="main-panel_wrap_column_wrap_output">
+                <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                    <div class="indicator" indicator-id="57">-</div>
+                </span>
+                <span class="main-panel_wrap_column_wrap_output_static-txt">ч</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_cassettes linked" onclick="myapp.loadSectionIfNotEdit('conditioner')">
+        <div class="main-panel_wrap_anim-box main-panel_cassettes_anim-box">
+            <div class="image-indicator" gid="cassete1"></div>
+<!--            <img src="img/cassette_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt main-panel_cassettes_txt">K1</span>
+        <div class="main-panel_wrap_column main-panel_cassettes_column">
+            <div class="main-panel_wrap_column_wrap main-panel_cassettes_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label main-panel_cassettes_column_wrap_label">T<sub class="sub-txt">пом.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="58">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap  main-panel_cassettes_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label main-panel_cassettes_column_wrap_label">T<sub class="sub-txt">канал</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="59">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_anim-box main-panel_cassettes_anim-box">
+            <div class="image-indicator" gid="cassete2"></div>
+<!--            <img src="img/cassette_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt main-panel_cassettes_txt">K2</span>
+        <div class="main-panel_wrap_column main-panel_cassettes_column">
+            <div class="main-panel_wrap_column_wrap main-panel_cassettes_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label main-panel_cassettes_column_wrap_label">T<sub class="sub-txt">пом.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="60">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap  main-panel_cassettes_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label main-panel_cassettes_column_wrap_label">T<sub class="sub-txt">канал</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="61">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_anim-box main-panel_cassettes_anim-box">
+            <div class="image-indicator" gid="cassete3"></div>
+<!--            <img src="img/cassette_anim.gif" width="54" height="53" class="main-panel_wrap_anim-box_ventilation">-->
+        </div>
+        <span class="main-panel_wrap_txt main-panel_cassettes_txt">K3</span>
+        <div class="main-panel_wrap_column main-panel_cassettes_column">
+            <div class="main-panel_wrap_column_wrap main-panel_cassettes_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label main-panel_cassettes_column_wrap_label">T<sub class="sub-txt">пом.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="62">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap  main-panel_cassettes_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label main-panel_cassettes_column_wrap_label">T<sub class="sub-txt">канал</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="63">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_boiler-room linked" onclick="myapp.loadSectionIfNotEdit('itp')">
+        <div class="image-indicator" gid="boiler1"></div>
+<!--        <img src="img/boiler_anim.gif" width="20" height="48" class="main-panel_boiler-room_boiler-anim">-->
+        <span class="main-panel_wrap_txt">Кот.1</span>
+        <div class="image-indicator" gid="boiler2"></div>
+<!--        <img src="img/boiler_anim.gif" width="20" height="48" class="main-panel_boiler-room_boiler-anim">-->
+        <span class="main-panel_wrap_txt">Кот.2</span>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">под. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="64">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">T<sub class="sub-txt">об. вод.</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="65">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">C&deg;</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">P<sub class="sub-txt">под. вод</sub></span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="66">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">Pa</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Режим:</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">Работа</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_txt">H1</span>
+                <div class="image-indicator" gid="pump1"></div>
+<!--                <img src="img/pump_anim.gif" width="36" height="24" class="main-panel_boiler-room_pump-anim">-->
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_txt">H2</span>
+                <div class="image-indicator" gid="pump2"></div>
+<!--                <img src="img/pump_anim.gif" width="36" height="24" class="main-panel_boiler-room_pump-anim">-->
+            </div>
+        </div>
+        <div class="main-panel_wrap_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Ротация Котлов</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="67">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">ч</span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_small-label">Ротация Насосов</span>
+                <div class="main-panel_wrap_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="75">-</div>
+                    </span>
+                    <span class="main-panel_wrap_column_wrap_output_static-txt">ч</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_electricity linked" onclick="myapp.loadSectionIfNotEdit('counter')">
+        <img src="img/electricity_pic.png" width="45" height="45" class="main-panel_electricity_anim">
+        <span class="main-panel_electricity_txt">Счетчики электричества</span>
+        <div class="main-panel_wrap_column main-panel_electricity_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">ВП1</span>
+                <div class="main-panel_wrap_column_wrap_output main-panel_electricity_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="68">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">ВП2</span>
+                <div class="main-panel_wrap_column_wrap_output main-panel_electricity_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="69">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel_wrap_column main-panel_electricity_column">
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">РП1</span>
+                <div class="main-panel_wrap_column_wrap_output main-panel_electricity_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="70">-</div>
+                    </span>
+                </div>
+            </div>
+            <div class="main-panel_wrap_column_wrap">
+                <span class="main-panel_wrap_column_wrap_label">РП2</span>
+                <div class="main-panel_wrap_column_wrap_output main-panel_electricity_column_wrap_output">
+                    <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                        <div class="indicator" indicator-id="71">-</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_water">
+        <img src="img/water_pic.png" width="45" height="40" class="main-panel_water_anim">
+        <span class="main-panel_water_txt">Счетчики воды</span>
+        <div class="main-panel_wrap_column_wrap">
+            <div class="main-panel_wrap_column_wrap_output main-panel_water_column_wrap_output">
+                <span class="main-panel_wrap_column_wrap_output_dynamic-txt">
+                    <div class="indicator" indicator-id="72">-</div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="main-panel_wrap main-panel_ibp">
+        <img src="img/ibp_pic.png" width="40" height="46" class="main-panel_ibp_anim">
+        <span class="main-panel_ibp_txt">ИБП</span>
+    </div>
+    <div class="main-panel_wrap main-panel_log linked" onclick="myapp.loadLogPage()">
+        <img src="img/log_pic.png" width="40" height="35" class="main-panel_log_anim">
+        <span class="main-panel_log_txt">Журнал!</span>
+    </div>
+</div>
+
+<!-- last ID 74 -->

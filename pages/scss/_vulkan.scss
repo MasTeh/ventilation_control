@@ -1,0 +1,326 @@
+.vulkan {
+    &_title{
+        font-family: 'roboto', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 103.19%;
+        text-align: center;
+        margin: 39px 30px;
+    }
+    &_schema {
+        position: relative;
+        &_title {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 0 0 5px;
+            box-sizing: border-box;
+        }
+        &_time {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 0px 0 34px;
+        }
+        &_winter {
+            background: url('../img/vulkan_schema/element3/winter.gif');
+            left: 20px;
+            top: 109px;
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            z-index: 2;
+            zoom: 80%;
+        }
+        &_day {
+            background: url('../img/vulkan_schema/element2/day.png');
+            left: 108px;
+            top: 105px;
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            z-index: 2;
+            zoom: 80%;
+            display: none;
+        }
+        &_night {
+            background: url('../img/vulkan_schema/element2/night.png');
+            left: 108px;
+            top: 105px;;
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            zoom: 80%;
+            z-index: 2;
+        }
+        &_main-panel {
+            display: flex;
+            &_section {
+                @include gradient-shadow;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px 5px;
+                box-sizing: border-box;
+                &_anim {
+                    margin: 0 5px 10px;
+                }
+                &_column {
+                    &_wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0 0 5px;
+                        width: 100%;
+                        &_label {
+                            align-self: start;
+                            min-width: 27px;
+                            margin: 0 10px;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 21px;
+                            line-height: 103.19%;
+                            text-align: center;
+                            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                        }
+                        &_output {
+                            display: flex;
+                            justify-content: space-around;
+                            min-width: 70px;
+                            height: 23px;
+                            background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                            &_dynamic-txt {
+                                font-family: 'roboto', Arial, sans-serif;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px;
+                                padding: 5px 0 0;
+                                margin: 0 auto;
+                            }
+                            &_static-txt {
+                                font-family: 'roboto', Arial, sans-serif;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 20px;
+                                text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                                padding: 0 3px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &_container {
+                width: 180px;
+                margin: 0 10px 0 0;
+            }
+        }
+        &_bottom {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0;
+            &_back-btn {
+                @include btn;
+                @include gradient-anim;
+                width: 120px;
+                height: 40px;
+                font-weight: normal;
+                font-size: 15px;
+            }
+            &_info {
+                display: flex;
+                justify-content: space-between;
+                min-width: 125px;
+                padding: 10px 5px;
+                box-sizing: border-box;
+                @include gradient-shadow;
+                &_column {
+                    &:nth-child(even) {
+                        margin: 0 10px 0 5px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &_txt {
+                        min-height: 10px;
+                        display: block;
+                        text-align: right;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 103.19%;
+                        margin: 0 0 3px;
+                    }
+                }
+            }
+        }
+    }
+    &_ustavki {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &_icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &_title {
+            padding: 0 82px 0 0;
+        }
+        &_content {
+            display: flex;
+            &_section {
+                @include gradient-shadow;
+                margin: 10px 10px 0 0;
+                padding: 10px 5px;
+                box-sizing: border-box;
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 270px;
+                position: relative;
+                &_title {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 103.19%;
+                    text-align: center;
+                    width: 100%;
+                    margin: 3px 0;
+                    box-sizing: border-box;
+                }
+                &_wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 0 5px;
+                    width: 100%;
+                    &_label {
+                        align-self: start;
+                        min-width: 27px;
+                        margin: 0;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 21px;
+                        line-height: 103.19%;
+                        text-align: center;
+                        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    &_output {
+                        display: flex;
+                        justify-content: space-around;
+                        min-width: 70px;
+                        height: 23px;
+                        background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                        box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                        &_dynamic-txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            padding: 4px 0 0;
+                            margin: 0 auto;
+                        }
+                        &_static-txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                }
+                &_timer {
+                    width: 100%;
+                    margin: 0 5px 10px;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    &_txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 103.19%;
+                        margin: 0 10px 0 0;
+                    }
+                    &_label {
+                        display: flex;
+                        justify-content: flex-end;
+                        max-width: 190px;
+                        box-sizing: border-box;
+                        position: relative;
+                        margin: 0 0 5px;
+                        &_txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 103.19%;
+                            padding: 4px 0 0; 
+                        }
+                        &_input {
+                            margin: 0;
+                            display: flex;
+                            justify-content: space-around;
+                            align-self: end;
+                            align-items: center;
+                            text-align: center;
+                            width: 30px;
+                            height: 16px;
+                            background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 2px 4px #626262;
+                            border: 0px;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 10px;
+                            outline: none;
+                            padding: 3px 2px 0;
+                        }
+                    }
+                    &_colon {
+                        font-size: 18px;
+                        padding: 0 5px 0; 
+                    }
+                    &_wrap {
+                        display: flex
+                    }
+                }
+                &_btn {
+                    @include btn;
+                    @include gradient-anim;
+                    margin: 120px 0 10px;
+                    width: 100px;
+                }
+                &::after {
+                    content: 'На кнопки нажимать не чаще 1 раза в 5 сек.';
+                    position: absolute;
+                    bottom: -30px;
+                    max-width: 100px;
+                    text-align: center;
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 9px;
+                }
+                &:last-child::after {
+                    content: '';
+                }
+            }
+        }
+    }
+}

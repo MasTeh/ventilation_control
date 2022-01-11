@@ -1,0 +1,515 @@
+.pvu3 {
+    &_title{
+        font-family: 'roboto', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 103.19%;
+        text-align: center;
+        margin: 13px 30px;
+    }
+    &_schema {
+        position: relative;
+        &_title {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        &_time {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 0px 0 20px;
+        }
+        &_winter {
+            background: url('../img/pvu3_schema/element2/winter.gif');
+            left: 20px;
+            top: 79px;
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            z-index: 2;
+            zoom: 80%;
+        }
+        &_day {
+            background: url('../img/pvu3_schema/element1/day.png');
+            left: 108px;
+            top: 75px;
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            z-index: 2;
+            zoom: 80%;
+            display: none;
+        }
+        &_night {
+            background: url('../img/pvu3_schema/element1/night.png');
+            left: 108px;
+            top: 75px;
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            zoom: 80%;
+            z-index: 2;
+        }
+        &_wrap {
+            display: flex;
+            justify-content: space-around;
+        }
+        &_main-pic {
+            background: url("../img/pvu3_schema/pvu3-main-pic.png") no-repeat;
+            position: relative;
+            width: 820px;
+            height: 380px;
+            margin: 0 auto;
+            z-index: 0;
+            margin: 0;
+            &_jaluzi-run1 {
+                background: url('../img/pvu3_schema/element3/jaluzi_free_start.bmp');
+                left: 73px;
+                top: 92px;
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1; 
+            }
+            &_jaluzi-stop1 {
+                background: url('../img/pvu3_schema/element3/jaluzi_free_stop.bmp');
+                left: 73px;
+                top: 92px;
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1; 
+                display: none; 
+            }
+            &_fan1 {
+                background: url('../img/pvu3_schema/element4/fan_output_run.gif');
+                left: 151px;
+                top: 92px;
+                position: absolute;
+                width: 89px;
+                height: 89px;
+                z-index: 1;
+            }
+            &_df1 {
+                background: url('../img/pvu3_schema/df.png');
+                left: 713px;
+                top: 65px;
+                position: absolute; 
+                width: 25px;
+                height: 59px;
+                z-index:1;
+            }
+            &_df2 {
+                background: url('../img/pvu3_schema/df.png');
+                left: 50px;
+                top: 195px;
+                position: absolute; 
+                width: 25px;
+                height: 59px;
+                z-index:1;
+            }
+            &_jaluzi-run2 {
+                background: url('../img/pvu3_schema/element5/jaluzi_free_start.bmp');
+                left: 73px;
+                top: 219px;
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1; 
+                display: none; 
+            }
+            &_jaluzi-stop2 {
+                background: url('../img/pvu3_schema/element5/jaluzi_free_stop.bmp');
+                left: 73px;
+                top: 219px;
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1;
+            }
+            &_filter1 {
+                background: url('../img/pvu3_schema/element6/Filter_input_alarm_start.gif');
+                left: 152px;
+                top: 219px;
+                position: absolute;
+                width: 80px;
+                height: 89px;
+                z-index:1;
+            }
+            &_filter2 {
+                background: url('../img/pvu3_schema/element6/Filter_input_alarm_stop.bmp');
+                left: 152px;
+                top: 219px;
+                position: absolute;
+                width: 80px;
+                height: 89px;
+                z-index:1;
+                display: none;
+
+            }
+            &_filter3 {
+                background: url('../img/pvu3_schema/element6/Filter_input_ok_start.bmp');
+                left: 152px;
+                top: 219px;
+                position: absolute;
+                width: 80px;
+                height: 89px;
+                z-index:1;
+                display: none;
+
+            }
+            &_filter4 {
+                background: url('../img/pvu3_schema/element6/Filter_input_ok_stop.bmp');
+                left: 152px;
+                top: 219px;
+                position: absolute;
+                width: 80px;
+                height: 89px;
+                z-index:1;
+                display: none;
+            }
+            &_ten1 {
+                background: url('../img/pvu3_schema/element7/TEN_run.gif');
+                left: 478px;
+                top: 219px;
+                position: absolute;
+                width: 87px;
+                height: 89px;
+                z-index:1;
+                display: none;
+            }
+            &_ten2 {
+                background: url('../img/pvu3_schema/element7/TEN_alarm.bmp');
+                left: 478px;
+                top: 219px;
+                position: absolute;
+                width: 87px;
+                height: 89px;
+                z-index:1;
+                display: none;
+            }
+            &_ten3 {
+                background: url('../img/pvu3_schema/element7/TEN_not_used.bmp');
+                left: 478px;
+                top: 219px;
+                position: absolute;
+                width: 87px;
+                height: 89px;
+                z-index:1;
+                display: none;
+            }
+            &_ten4 {
+                background: url('../img/pvu3_schema/element7/TEN_stop.bmp');
+                left: 478px;
+                top: 219px;
+                position: absolute;
+                width: 87px;
+                height: 89px;
+                z-index:1;
+                display: none;
+            }
+            &_ten5 {
+                background: url('../img/pvu3_schema/element7/TEN_cooled.gif');
+                left: 478px;
+                top: 219px;
+                position: absolute;
+                width: 67px;
+                height: 72px;
+                z-index:1;
+            }
+            &_fan2 {
+                background: url('../img/pvu3_schema/element8/Fan_vyt.gif');
+                left: 645px;
+                top: 219px;
+                position: absolute;
+                width: 90px;
+                height: 89px;
+                z-index:1;
+            }
+            &_df3 {
+                background: url('../img/pvu3_schema/df.png');
+                left: 713px;
+                top: 193px;
+                position: absolute; 
+                width: 25px;
+                height: 59px;
+                z-index:1;
+            }
+            &_output1 {
+                background: url('../img/pvu3_schema/c0.gif');
+                left: 693px;
+                top: 42px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3;
+                zoom: 100%;
+            }
+            &_output2 {
+                background: url('../img/pvu3_schema/c0.gif');
+                left: 33px;
+                top: 170px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3;
+                zoom: 100%;
+            }
+            &_output3 {
+                background: url('../img/pvu3_schema/c0.gif');
+                left: 693px;
+                top: 170px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3;
+                zoom: 100%;
+            }
+            &_output4 {
+                background: url('../img/pvu3_schema/procent.png');
+                left: 482px;
+                top: 180px;            
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3;
+                zoom: 100%;
+            }
+            &_indicator1 {
+                width: 125px;
+                height: 5px;
+                border: 1px solid green;
+                position: absolute;
+                left: 450px;
+                top: 205px;
+                z-index: 3;
+                background: white;
+            }
+            &_indicator_fill {
+                width: 35px;
+                height: 5px;
+                background: green;
+                z-index: 3;
+            }
+            &_txt {
+                text-align: center;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 103.19%;
+                display: block;
+                margin: 6px 10px 0 0;
+            }
+            
+        }
+        &_bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_back-btn {
+                @include btn;
+                @include gradient-anim;
+                width: 120px;
+                height: 40px;
+                font-weight: normal;
+                font-size: 15px;
+            }
+            &_info {
+                display: flex;
+                justify-content: space-between;
+                min-width: 125px;
+                padding: 10px 15px;
+                box-sizing: border-box;
+                @include gradient-shadow;
+                &_column {
+                    &:nth-child(even) {
+                        margin: 0 10px 0 5px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &_txt {
+                        min-height: 10px;
+                        display: block;
+                        text-align: right;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 103.19%;
+                        margin: 0 0 3px;
+                    }
+                }
+            }
+        }
+    }
+    &_ustavki {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &_icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &_title {
+            padding: 0 50px 0 0;
+        }
+        &_content {
+            display: flex;
+            margin: 180px 0 0;
+            justify-content: space-around;
+            &_section {
+                @include gradient-shadow;
+                margin: 10px 80px 0 0;
+                padding: 10px 5px;
+                box-sizing: border-box;
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 250px;
+                position: relative;
+                &_title {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 103.19%;
+                    text-align: center;
+                    width: 100%;
+                    margin: 3px 0;
+                    box-sizing: border-box;
+                }
+                &_wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 0 10px;
+                    width: 100%;
+                    &_label {
+                        align-self: start;
+                        min-width: 27px;
+                        margin: 0;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 21px;
+                        line-height: 103.19%;
+                        text-align: center;
+                        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    &_output {
+                        display: flex;
+                        justify-content: space-around;
+                        min-width: 70px;
+                        height: 23px;
+                        background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                        box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                        &_dynamic-txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            padding: 4px 0 0;
+                            margin: 0 auto;
+                        }
+                        &_static-txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                }
+                &_timer {
+                    width: 100%;
+                    margin: 0 5px 10px;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    &_txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 103.19%;
+                        margin: 0 10px 0 0;
+                    }
+                    &_label {
+                        display: flex;
+                        justify-content: flex-end;
+                        max-width: 190px;
+                        box-sizing: border-box;
+                        position: relative;
+                        margin: 0 0 5px;
+                        &_txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 103.19%;
+                            padding: 4px 0 0; 
+                        }
+                        &_input {
+                            margin: 0;
+                            display: flex;
+                            justify-content: space-around;
+                            align-self: end;
+                            align-items: center;
+                            text-align: center;
+                            width: 30px;
+                            height: 16px;
+                            background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 2px 4px #626262;
+                            border: 0px;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 10px;
+                            outline: none;
+                            padding: 3px 2px 0;
+                        }
+                    }
+                    &_colon {
+                        font-size: 18px;
+                        padding: 0 5px 0; 
+                    }
+                    &_wrap {
+                        display: flex
+                    }
+                }
+                &_btn {
+                    @include btn;
+                    @include gradient-anim;
+                    margin: 0 0 10px;
+                    width: 100px;
+                    &_margin {
+                        margin: 40px 0 10px;
+                    }
+                }
+                &_bottom-txt {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 103.19%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

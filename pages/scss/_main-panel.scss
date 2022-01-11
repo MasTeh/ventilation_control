@@ -1,0 +1,340 @@
+.main-panel {
+    width: 1430px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &_wrap {
+        position: relative;
+        @include panel-style;
+        @include gradient-shadow;
+        &:first-child::before {
+            content: "ПВУ1 (Зал)";
+            top: -13px;
+            @include top-txt;
+        }
+        &:nth-child(2)::before {
+            content: "ПВУ2";
+            top: -13px;
+            @include top-txt;
+        }
+        &_anim-box {
+            width: 54px;
+            height: 54px;
+        }
+        &_txt {
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 21px;
+                line-height: 103.19%;
+                text-align: center;
+                text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+        }
+        &_column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 55px;
+            &_wrap{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:first-child {
+                    margin: 0 0 5px;
+                }
+                &_label {
+                    align-self: start;
+                    min-width: 27px;
+                    margin: 0 9px 0 0;
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 21px;
+                    line-height: 103.19%;
+                    text-align: center;
+                    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                }
+                &_small-label {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 11px;
+                    line-height: 103.19%;
+                    letter-spacing: -0.005em;
+                    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                    padding: 0 5px 0 0;
+                }
+                &_output {
+                    display: flex;
+                    justify-content: space-around;
+                    min-width: 70px;
+                    height: 23px;
+                    background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                    &_dynamic-txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        padding: 4px 0 0;
+                        margin: 0 auto;
+                    }
+                    &_static-txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                        padding: 0 5px 0 0;
+                    }
+                    &_timer {
+                        text-align: center;
+                        width: 15px;
+                    }
+                    &_option-txt {
+                        text-align: center;
+                        min-width: 90px;
+                    }
+                }
+            }
+        }
+    }
+    &_pvu3 {
+        width: 410px;
+        position: relative;
+        margin-right: 13px;
+        padding: 0 6px 0 30px;
+        &::before {
+            @include top-txt;
+            content: "ПВУ3 (ЦХМ)";
+            top: -13px;
+        }
+    }
+    &_lavatory {
+        width: 250px;
+        position: relative;
+        margin-right: 13px;
+        padding: 2px 10px;
+        box-sizing: border-box;
+        &::before {
+            @include top-txt;
+            content: "Санузлы";
+            top: -13px;    
+        } 
+    }
+    &_bakery {
+        width: 300px;
+        position: relative;
+        padding: 2px 10px;
+        box-sizing: border-box;
+        margin-right: 13px;
+        &::before {
+            @include top-txt;
+            content: "Пекарня";
+            top: -13px;    
+        }
+        &_timer {
+            position: relative;
+            &::before {
+                @include top-txt;
+                content: "Таймер День";
+                top: -13px;
+                right: 5px;
+            }
+        }
+    }
+    &_debarkader {
+        width: 395px;
+        position: relative;
+        padding: 2px 18px 2px 2px;
+        box-sizing: border-box;
+        &::before {
+            @include top-txt;
+            content: "Завеса дебаркадер";
+            top: -13px; 
+            left: 10px;       
+        }
+        &_anim-box {
+            width: 92px;
+            height: 55px;
+        }        
+    }
+    &_volcanoes {
+        width: 717px;
+        margin-right: 13px;
+        box-sizing: border-box;
+        padding: 0 13px 0 30px;
+        &::before {
+            @include top-txt;
+            content: "Вулканы";
+            top: -13px;    
+        }
+    }
+    &_server-room {
+        width: 700px;
+        box-sizing: border-box;
+        &::before {
+            @include top-txt;
+            content: "Серверная";
+            top: -13px;
+            left: 10px;    
+        }
+        &_column {
+            align-items: center;
+            &_label {
+                align-self: unset;
+            }
+        }
+    }
+    &_cassettes {
+        width: 717px;
+        box-sizing: border-box;
+        margin-right: 13px;
+        justify-content: unset;
+        &_anim-box {
+            margin: 0 5px 0 0;
+            &:first-child::before {
+                @include top-txt;
+                content: "Зона 1 овощи фрукты";
+                top: -13px;    
+            }
+            &:nth-child(4)::before {
+                @include top-txt;
+                content: "Зона 2 кассы";
+                top: -13px;    
+            }
+            &:nth-child(7)::before {
+                @include top-txt;
+                content: "Зона 3 кассы";
+                top: -13px;    
+            }
+        }
+        &_txt {
+            margin: 0 5px 0 0;
+        }
+        &_column {
+            margin: 0 12px 0 0;
+            &_wrap {
+                &_label {
+                    margin: 0 5px 0 0; 
+                }
+            }
+        }
+    }
+    &_boiler-room {
+        width: 700px;
+        box-sizing: border-box;
+        padding: 0 18px 0 10px;
+        &::before {
+            @include top-txt;
+            content: "Котельная";
+            top: -13px;
+        }
+    }
+    &_electricity {
+        width: 717px;
+        box-sizing: border-box;
+        margin-right: 13px;
+        &_txt {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 121.69%;
+            letter-spacing: 0.025em;
+            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+            max-width: 148px;
+        }
+        &_column {
+            &_wrap {
+                &_output {
+                    width: 175px;
+                }
+            }
+        }
+    }
+    &_water {
+        width: 400px;
+        margin-right: 13px;
+        box-sizing: border-box;
+        &_anim {
+            margin-right: 27px;
+        }
+        &_txt {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 121.69%;
+            letter-spacing: 0.025em;
+            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+            max-width: 148px; 
+        }
+        &_column {
+            &_wrap {
+                &_output {
+                    width: 175px;
+                }
+            }
+        }
+    }
+    &_ibp {
+        width: 145px;
+        margin-right: 13px;
+        box-sizing: border-box;
+        &_txt {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 121.69%;
+            letter-spacing: 0.025em;
+            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+            max-width: 148px; 
+        }
+    }
+    &_log {
+        width: 128px;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 5px 20px 0;
+        &_txt {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 121.69%;
+            letter-spacing: 0.025em;
+            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+            max-width: 148px; 
+        }
+    }
+}
+
+.sub-txt {
+    font-family: 'roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 103.19%;
+    color: #000000;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+.timer1 {
+    position: relative;
+    &::before {
+        @include top-txt;
+        content: "Таймер №1";
+        top: -13px;
+        right: 10px;
+    }
+}
+.timer2 {
+    position: relative;
+    &::before {
+        @include top-txt;
+        content: "Таймер №2";
+        top: -13px;
+        right: 10px;
+    }
+}

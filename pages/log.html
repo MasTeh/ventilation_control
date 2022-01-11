@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Журналы</title>
+</head>
+
+<body>
+    <div class="counters-panel log">
+        <div class="log_main">
+            <div class="log_main_top">
+                <div class="log_main_top_left">
+                    <button onclick="myapp.loadLogPage('summary')" class="log_main_top_btn" id="accidentBtn"><span class="log_main_top_btn_txt">Журнал аварий</span></button>
+                    <button onclick="myapp.loadLogPage('actions')" class="log_main_top_btn" id="eventBtn"><span class="log_main_top_btn_txt">Журнал событий</span></button>
+                </div>
+                <div class="log_main_top_right">
+                    <h2 class="conditioner_schema_time schema_time"></h2>
+                    <img src="img/header_icon.png" class="conditioner_ustavki_icon" width="82" height="82" alt="Logo">
+                </div>
+            </div>
+            <div class="log_main_panel">
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

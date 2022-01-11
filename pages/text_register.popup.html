@@ -1,0 +1,96 @@
+<div class="popup register-popup" style="height: 450px">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="title">Регистр</div>
+                    <div class="right">
+                        <!-- Link to close popup -->
+                        <a class="link popup-close">Закрыть</a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+
+                <div class="gra-label" style="padding: 20px"></div>
+
+                <form class="list" id="registerForm">
+                    <input type="hidden" name="type" value="number" class="hidden">
+                    <ul class="row">
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Надпись слева</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="title"  placeholder="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">IP адрес регистра</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="ipaddr"  required validate placeholder="196.0.0.1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Порт</div>
+                                    <div class="item-input-wrap">
+                                        <input type="number" name="port" min="0"  required validate pattern="[0-9]*" placeholder="334" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Номер регистра</div>
+                                    <div class="item-input-wrap">
+                                        <input type="number" name="number" min="0" required validate pattern="[0-9]*" placeholder="45054" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Размер регистра</div>
+                                    <div class="item-input-wrap">
+                                        <select name="size">
+                                            <option value="1">1 bit (boolean)</option>
+                                            <option value="8">8 bit (int)</option>
+                                            <option value="16">16 bit (float)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div style="padding: 20px" class="options_block">
+                    <div style="font-size: 18px">Опции</div>
+                    <textarea name="switcher_options" style="height: 150px;" placeholder="Значение:Текст"></textarea>
+                    </div>
+
+                    <div class="row" style="padding: 20px">
+                        <div class="col-50">
+                            <a href="#" onclick="myapp.removeRegister()" class="button" style="color:red">Удалить</a>
+                        </div>
+                        <div class="col-50">
+                            <a href="#" onclick="myapp.saveRegisterSet()" class="button button-fill">Записать и закрыть</a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

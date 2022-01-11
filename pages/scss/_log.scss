@@ -1,0 +1,108 @@
+.log {
+    &_main {
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            width: 100%;
+            &_btn {
+                @include btn;
+                @include gradient-anim;
+                transform: skew(-40deg);
+                width: 180px;
+                height: 40px;
+                margin: 0 0 0 20px;
+                &_txt {
+                    display: block;
+                    transform: skew(40deg);
+                }
+                &_active {
+                    background: linear-gradient(180deg, #e2e2e2 6.75%, #b9b9b9 100%), #C4C4C4;
+                }
+            }
+            &_time {
+                margin: 20px 100px 20px 0;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 103.19%;
+                text-align: center;
+            }
+        }
+        &_panel {
+            @include gradient-shadow;
+            height: 470px;
+            width: 1100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+            &_list {
+                height: 400px;
+                width: 900px;
+                background: white;
+                padding: 0;
+                overflow-y: scroll;
+                &_head {
+                    background: rgb(214, 214, 214);
+                    position: sticky;
+                    top: 0;
+                }
+                &_item {
+                    display: flex;
+                    &_number {
+                        padding: 10px 0 10px 5px;
+                        width: 10%;
+                        border-bottom: 2px solid #A4A4A4;
+                        border-right: 2px solid #A4A4A4;
+                        box-sizing: border-box;
+                    }
+                    &_date {
+                        width: 20%;
+                        padding: 10px 0 10px 5px;
+                        border-bottom: 2px solid #A4A4A4;
+                        border-right: 2px solid #A4A4A4; 
+                        box-sizing: border-box;
+                    }
+                    &_time {
+                        width: 20%;
+                        padding: 10px 0 10px 5px;
+                        border-bottom: 2px solid #A4A4A4;
+                        border-right: 2px solid #A4A4A4;
+                        box-sizing: border-box;
+                    }
+                    &_accident {
+                        width: 50%;
+                        padding: 10px 0 10px 5px;
+                        border-bottom: 2px solid #A4A4A4; 
+                        box-sizing: border-box;
+                    }
+                    &_user {
+                        width: 25%;
+                        padding: 10px 0 10px 5px;
+                        border-bottom: 2px solid #A4A4A4;
+                        border-right: 2px solid #A4A4A4;
+                        box-sizing: border-box;
+                    }
+                    &_event {
+                        width: 25%;
+                        padding: 10px 0 10px 5px;
+                        border-bottom: 2px solid #A4A4A4;
+                        box-sizing: border-box; 
+                    }
+                }
+                &_item_warning {
+                    color: red;
+                }
+            }
+            &_list_hide {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+<div class="popup setter-popup" style="height: 450px">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="title">Новая уставка</div>
+                    <div class="right">
+                        <!-- Link to close popup -->
+                        <a class="link popup-close">Закрыть</a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+
+                <form class="list" id="addSetterForm">
+                    <input type="hidden" name="update_index" value="null" class="hidden">
+                    <ul class="row">
+
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Тип элемента</div>
+                                    <div class="item-input-wrap">
+                                        <select name="setter_ui_type">
+                                            <option value="setter">Уставка</option>
+                                            <option value="header">Подзаголовок</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Колонка</div>
+                                    <div class="item-input-wrap">
+                                        <select name="column">
+                                            <option value="1">Первая</option>
+                                            <option value="2">Вторая</option>
+                                            <option value="3">Третья</option>
+                                            <option value="4">Четвёртая</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Порядковый номер</div>
+                                    <div class="item-input-wrap">
+                                        <input name="ordernum" min="0" type="number" value="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-100 elem-header" style="display: none">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Название подзаголовка</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="header_name" placeholder="Для отображения" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Название уставки</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="name" required validate placeholder="Для отображения" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Кнопка старта</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="button_start_name" placeholder="Запуск" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Кнопка остановки</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="button_stop_name" placeholder="Стоп" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Название состояния 0</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="label_stopped" placeholder="Остановлено" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Название состояния 1</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="label_started" placeholder="Запущено" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">IP адрес регистра (запись)</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="ipaddr"  required validate placeholder="196.0.0.1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Порт (запись)</div>
+                                    <div class="item-input-wrap">
+                                        <input type="number" name="port" min="0"  required validate pattern="[0-9]*" placeholder="334" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">GRA индикатора (регистр:размер)</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="gra" required validate placeholder="70:8" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Тип уставки</div>
+                                    <div class="item-input-wrap">
+                                        <select name="type" class="setter-type-trigger">
+                                            <option value="float">16 bit (float)</option>
+                                            <option value="int">8 bit (int) - число</option>
+                                            <option value="switcher">8 bit (int) - список</option>
+                                            <option value="coil">1 bit (coil)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Режим импульса</div>
+                                    <div class="item-input-wrap">
+                                        <select name="impulse">
+                                            <option value="false">Нет</option>
+                                            <option value="true">Да</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Шаг изменения (+/-)</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="step" min="0.01" value="1" validate placeholder="0.1, 1, 10" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Номер регистра (запись)</div>
+                                    <div class="item-input-wrap">
+                                        <input type="number" name="number" min="0" required validate pattern="[0-9]*" placeholder="45054" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-50 elem-setter">
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Задержка (после нажатия)</div>
+                                    <div class="item-input-wrap">
+                                        <select name="delay">
+                                            <option value="3000">3 секунды</option>
+                                            <option value="10000">10 секунд</option>
+                                            <option value="20000">20 секунд</option>
+                                            <option value="30000">30 секунд</option>
+                                            <option value="60000">1 минута</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+
+
+                    </ul>
+
+                    <div style="padding: 20px; display: none" class="options_block">
+                        <div style="font-size: 18px">Опции</div>
+                        <textarea name="switcher_options" style="height: 150px;" placeholder="Значение:Текст"></textarea>
+                    </div>
+
+                    <div class="row" style="padding: 20px">
+                        <div class="col-50">
+                            <a href="#" onclick="setters.saveSetter()" class="button button-fill">Записать и закрыть</a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

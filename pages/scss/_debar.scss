@@ -1,0 +1,278 @@
+.debar {
+    &_schema {
+        &_title {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 103.19%;
+            text-align: center;
+        }
+        &_time {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 103.19%;
+            text-align: center;
+        }
+        &_main-pic {
+            width: 800px;
+            position: relative;
+            margin: 0 10px 0 0;
+            &_anim1 {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100px;
+            }
+            &_anim2 {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100px;
+            }
+            &_anim3 {
+                position: absolute;
+                top: 0;
+                left: 100px;
+            }
+            &_winter {
+                background: url('../img/debar_schema/element3/winter.gif');
+                left: 20px;
+                top: 10px;
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                z-index: 2;
+            }
+            &_day {
+                background: url('../img/debar_schema/element2/day.png');
+                left: 18px;
+                top: 90px;
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                z-index: 2;
+                display: none;
+            }
+            &_night {
+                background: url('../img/debar_schema/element2/night.png');
+                left: 18px;
+                top: 100px;
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                z-index: 2;
+            }
+            &_bottom {
+                position: absolute;
+                top: 350px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 475px;
+                &_back-btn {
+                    @include btn;
+                    @include gradient-anim;
+                    width: 120px;
+                    height: 40px;
+                    font-weight: normal;
+                    font-size: 15px;
+                }
+                &_info {
+                    display: flex;
+                    justify-content: space-around;
+                    min-width: 125px;
+                    padding: 10px;
+                    z-index: 1;
+                    @include gradient-shadow;
+                    &_column {
+                        &:nth-child(even) {
+                            margin: 0 20px 0 10px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &_txt {
+                            min-height: 10px;
+                            display: block;
+                            text-align: right;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 11px;
+                            line-height: 103.19%;
+                            margin: 0 0 3px;
+                        }
+                    }
+                }
+            }
+            &_info {
+                position: absolute;
+                left: 600px;
+                top: 20px;
+                &_section {
+                    @include gradient-shadow;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0 0 10px;
+                    &_title {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 103.19%;
+                        text-align: center;
+                        width: 100%;
+                        margin: 0 0 15px;
+                        box-sizing: border-box;
+                    }
+                    &_small-title {
+                        margin: 0 0 5px;
+                    }
+                    &_txt {
+                        min-height: 10px;
+                        display: block;
+                        text-align: right;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 11px;
+                        line-height: 103.19%;
+                    }
+                    &_wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0 0 5px;
+                        width: 100%;
+                        &_label {
+                            align-self: start;
+                            min-width: 27px;
+                            margin: 0 9px 0 0;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 103.19%;
+                            text-align: center;
+                            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                        }
+                        &_output {
+                            display: flex;
+                            justify-content: space-around;
+                            min-width: 70px;
+                            height: 23px;
+                            background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                            &_dynamic-txt {
+                                font-family: 'roboto', Arial, sans-serif;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px;
+                                padding: 5px 0 0;
+                                margin: 0 auto;
+                            }
+                            &_static-txt {
+                                font-family: 'roboto', Arial, sans-serif;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                                padding: 2px 5px 0 0;
+                            }
+                            &_static-txt_time {
+                                padding: 0; 
+                            }
+                        }
+                        &_output_date {
+                            min-width: unset;
+                            width: 100%;
+                        }
+                    }      
+                }
+            }
+        }
+
+    }
+    &_ustavki {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        &_service {
+            @include gradient-shadow;
+            margin: 51px 82px 0 0;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_title {
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 103.19%;
+                text-align: center;
+                width: 100%;
+                margin:  0 15px;
+                box-sizing: border-box;
+            }
+            &_wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 5px;
+                width: 100%;
+                &_label {
+                    align-self: start;
+                    min-width: 27px;
+                    margin: 0 9px 0 0;
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 103.19%;
+                    text-align: center;
+                    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                }
+                &_output {
+                    display: flex;
+                    justify-content: space-around;
+                    min-width: 70px;
+                    height: 23px;
+                    background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                    &_dynamic-txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        padding: 4px 0 0;
+                        margin: 0 auto;
+                    }
+                    &_static-txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                        padding: 1px 5px 0 0;
+                    }
+                }
+            }
+            &_btn {
+                @include btn;
+                @include gradient-anim;
+                margin: 0 0 10px;
+                width: 100px;
+            }
+        }
+    }
+}

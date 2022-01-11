@@ -1,0 +1,187 @@
+.counters-panel {
+    display: flex;
+    justify-content: space-between;
+    &_navigation {
+        display: flex;
+        flex-direction: column;
+        min-height: 510px;
+        padding: 5px 20px;
+        &_button {
+            @include btn;
+            @include gradient-anim;
+            margin: 0 0 12px;
+            &:hover {
+                background: linear-gradient(180deg, #FFFFFF 6.75%, #ffe6b8 100%), #C4C4C4;        
+            }
+        }
+    }
+    &_counters {
+        &_title{
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 103.19%;
+            text-align: center;
+        }
+        &_wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            &_counter {
+                @include panel-style;
+                @include gradient-shadow;
+                flex-wrap: wrap;
+                height: unset;
+                margin: 0;
+                width: 210px;
+                justify-content: space-between;
+                padding: 5px;
+                box-sizing: border-box;
+                &_title {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 103.19%;
+                    text-align: center; 
+                    width: 100%;
+                    margin: 6px 0 15px;
+                }
+                &_pic {
+                    margin: 0 0 0 15px;
+                }
+                &_phases {
+                    width: 100px;
+                    &_phase {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin: 0 0 3px;
+                        position: relative;
+                        &:hover::after {
+                            content: attr(data-tooltip);
+                            position: absolute;
+                            right: -85px;
+                            z-index: 1;
+                            background: rgba(255,255,230,0.9);
+                            font-family: Arial, sans-serif;
+                            font-size: 11px;
+                            padding: 10px 10px;
+                            border: 1px solid #333;
+                        }
+                        &_label {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 10px;
+                            line-height: 103.19%;
+                            padding: 0 3px 0 0;
+                        }
+                        &_output {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            min-width: 50px;
+                            height: 16px;
+                            background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                            border-radius: 1px;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 10px;
+
+                        }
+                    }
+                }
+                &_phases-cosines {
+                    display: flex;
+                }
+                &_sigmas {
+                    width: 100%;
+                    &_sigma {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        position: relative;
+                        margin: 0 0 3px;
+                        &:hover::after {
+                            content: attr(data-tooltip);
+                            position: absolute;
+                            right: -85px;
+                            top: -10px;
+                            z-index: 1;
+                            background: rgba(255,255,230,0.9);
+                            font-family: Arial, sans-serif;
+                            font-size: 11px;
+                            padding: 10px 10px;
+                            border: 1px solid #333;
+                        }
+                        &_label {
+                            padding: 0 0 0 13px;
+                        }
+                        &_output {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_report {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 25px 0 0;
+        &_icon {
+            align-self: flex-end;
+        }
+        &_title {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 39px 0 30px;
+        }
+        &_form {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 135px;
+            justify-content: space-around;
+            margin: 0 5px 0 0;
+            &_label {
+                width: 200px;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 103.19%;
+                margin: 15px 10px 0;
+                box-sizing: border-box;
+            }
+            &_input {
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 103.19%;
+                outline: none;
+                margin: 5px 0 0;
+            }
+            &_btn {
+                @include btn;
+                @include gradient-anim;
+                margin: 25px 35px 0;
+                &:nth-child(2) {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

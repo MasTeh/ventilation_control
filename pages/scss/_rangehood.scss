@@ -1,0 +1,363 @@
+.rangehood {
+    &_title{
+        font-family: 'roboto', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 103.19%;
+        text-align: center;
+        margin: 39px 30px;
+    }
+    &_schema {
+        position: relative;
+        &_title {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        &_time {
+            font-family: 'roboto', Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 103.19%;
+            text-align: center;
+            margin: 0px 0 20px;
+        }
+        &_winter {
+            background: url('../img/rangehood_scheme/element2/winter.gif');
+            left: 20px;
+            top: 139px;
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            z-index: 2;
+            zoom: 80%;
+        }
+        &_day {
+            background: url('../img/rangehood_scheme/element1/day.png');
+            left: 108px;
+            top: 135px;
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            z-index: 2;
+            zoom: 80%;
+            display: none;
+        }
+        &_night {
+            background: url('../img/rangehood_scheme/element1/night.png');
+            left: 108px;
+            top: 135px;;
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            zoom: 80%;
+            z-index: 2;
+        }
+        &_wrap {
+            display: flex;
+            justify-content: space-around;
+        }
+        &_main-pic {
+            background: url("../img/rangehood_scheme/rangehood-main-pic.png") no-repeat;
+            position: relative;
+            zoom: 65%;
+            width: 640px;
+            height: 380px;
+            z-index: 0;
+            margin: 0 20px;
+            &_jaluzi-run1 {
+                background: url('../img/rangehood_scheme/element3/jaluzi_free_start.bmp');
+                left: 77px;  
+                top: 226px; 
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1; 
+            }
+            &_jaluzi-stop1 {
+                background: url('../img/rangehood_scheme/element3/jaluzi_free_stop.bmp');
+                left: 77px;  
+                top: 226px; 
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1;
+                display: none; 
+            }
+            &_fan1 {
+                background: url('../img/rangehood_scheme/element4/fan_output_run.gif');
+                left: 343px;  
+                top: 226px; 
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1;
+            }
+            &_warning1 {
+                color: red;
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 103.19%;
+                text-align: center;
+            }
+            &_jaluzi-run2 {
+                background: url('../img/rangehood_scheme/element5/jaluzi_free_start.bmp');
+                left: 77px;  
+                top: 226px; 
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1; 
+                display: none; 
+            }
+            &_jaluzi-stop2 {
+                background: url('../img/rangehood_scheme/element5/jaluzi_free_stop.bmp');
+                left: 77px;  
+                top: 226px; 
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1;
+            }
+            &_fan2 {
+                background: url('../img/rangehood_scheme/element6/fan_output_run.gif');
+                left: 343px;  
+                top: 226px; 
+                position: absolute; 
+                width: 79px;
+                height: 89px;
+                z-index:1;
+            }
+            &_warning2 {
+                color: red;
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 103.19%;
+                text-align: center;
+            }
+            &_df {
+                background: url('../img/rangehood_scheme/df.png');
+                left: 483px;
+                top: 192px; 
+                position: absolute; 
+                width: 25px;
+                height: 59px;
+                z-index:1;
+            }
+            &_output1 {
+                background: url('../img/rangehood_scheme/c0.gif');
+                left: 350px;
+                top: 120px;
+                position: absolute;
+                width: 62px;
+                height: 22px;
+                z-index: 3;
+                zoom: 130%;
+            }
+            &_txt {
+                text-align: center;
+                font-family: 'roboto', Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 103.19%;
+                display: block;
+                margin: 6px 10px 0 0;
+            }
+            &:last-child {
+                margin: 0 0 0 20px;
+            }
+            
+        }
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 560px;
+            margin: 90px 0 0;
+            &_back-btn {
+                @include btn;
+                @include gradient-anim;
+                width: 120px;
+                height: 40px;
+                font-weight: normal;
+                font-size: 15px;
+            }
+        }
+    }
+    &_ustavki {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &_icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &_title {
+            padding: 0 50px 0 0;
+        }
+        &_content {
+            display: flex;
+            margin: 180px 0 0;
+            justify-content: space-around;
+            &_section {
+                @include gradient-shadow;
+                margin: 10px 10px 0 0;
+                padding: 10px 5px;
+                box-sizing: border-box;
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 250px;
+                position: relative;
+                &_title {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 103.19%;
+                    text-align: center;
+                    width: 100%;
+                    margin: 3px 0;
+                    box-sizing: border-box;
+                }
+                &_wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 0 15px;
+                    width: 100%;
+                    &_label {
+                        align-self: start;
+                        min-width: 27px;
+                        margin: 0;
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 21px;
+                        line-height: 103.19%;
+                        text-align: center;
+                        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    &_output {
+                        display: flex;
+                        justify-content: space-around;
+                        min-width: 70px;
+                        height: 23px;
+                        background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                        box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #626262;
+                        &_dynamic-txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            padding: 4px 0 0;
+                            margin: 0 auto;
+                        }
+                        &_static-txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                }
+                &_timer {
+                    width: 100%;
+                    margin: 0 5px 10px;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    &_txt {
+                        font-family: 'roboto', Arial, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 103.19%;
+                        margin: 0 10px 0 0;
+                    }
+                    &_label {
+                        display: flex;
+                        justify-content: flex-end;
+                        max-width: 190px;
+                        box-sizing: border-box;
+                        position: relative;
+                        margin: 0 0 5px;
+                        &_txt {
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 103.19%;
+                            padding: 4px 0 0; 
+                        }
+                        &_input {
+                            margin: 0;
+                            display: flex;
+                            justify-content: space-around;
+                            align-self: end;
+                            align-items: center;
+                            text-align: center;
+                            width: 30px;
+                            height: 16px;
+                            background: linear-gradient(180deg, #FFFFFF 6.75%, #DADADA 100%), #C4C4C4;
+                            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 2px 4px #626262;
+                            border: 0px;
+                            font-family: 'roboto', Arial, sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 10px;
+                            outline: none;
+                            padding: 3px 2px 0;
+                        }
+                    }
+                    &_colon {
+                        font-size: 18px;
+                        padding: 0 5px 0; 
+                    }
+                    &_wrap {
+                        display: flex
+                    }
+                }
+                &_btn {
+                    @include btn;
+                    @include gradient-anim;
+                    margin: 0 0 10px;
+                    width: 100px;
+                    &_margin {
+                        margin: 40px 0 10px;
+                    }
+                }
+                &_bottom-txt {
+                    font-family: 'roboto', Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 103.19%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
